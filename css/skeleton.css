@@ -125,7 +125,8 @@ body {
   line-height: 1.6;
   font-weight: 400;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #222; }
+  color: #222; 
+    background-color: #eeeeee;}
 
 
 /* Typography
@@ -158,7 +159,7 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #1EAEDB; }
+  color: #8CC63F; }
 a:hover {
   color: #0FA0CE; }
 
@@ -416,3 +417,126 @@ there.
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
+
+/* Customised */
+
+header {
+    background: #019245;
+    color: #fff;
+} 
+
+header button {
+    position: fixed;
+    right: 1px;
+    top: 2px;
+    background-color: rgba(255,255,255,0.7);
+    border: #fff;
+    color: #fff;
+    height: 25px;
+    padding: 10px 10px;
+    line-height: 8px;}
+
+header button:hover {
+    background-color: #fff;
+    color: #AAA;
+}
+#sign-up {
+    padding: 20px 0px;
+    align-content: center;
+    background-color: #ffffff;
+    vertical-align: middle;
+}
+
+
+#sign-up button {
+background-color: #8CC63F;
+border-color: #8CC63F;    
+}
+
+#sign-up button:hover{
+background-color: transparent;
+}
+
+.seperator {
+    width: 100%;
+    padding: 0em 1em;
+}
+
+nav {
+  text-align: center;
+  margin-top: -6px;
+
+}
+
+
+nav ul {
+ list-style: none;
+  margin: 0px 0px;
+  padding: 0;
+  border-top: 2px solid #fff;
+
+}
+
+nav li{
+  display: inline-block;
+  background-color: #8CC63F;
+  margin: 0px 0px;
+  border-right: 1px solid #fff;
+  box-sizing: border-box;
+}
+
+nav a {
+  padding: 0px 10%;
+  color: #fff;
+  text-decoration: none;
+  text-transform:uppercase;
+  display: block;
+  padding: 5px 0px;
+
+}
+
+nav a:hover {
+    background-color: #69952F;
+    color: #fff;
+}
+
+nav li:nth-child(even) {
+  width: 50%;
+  float: right; 
+  border-bottom: 1px solid #fff;
+}
+nav li:nth-child(odd) {
+  width: 50%;
+  float: left;
+  border-bottom: 1px solid #fff;
+
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 600px) {
+
+nav li:nth-child(n) {
+  width: 25%;
+  float: left; 
+}
+
+}
+.navclass:before,
+.navclass:after {
+    content: " "; /* 1 */
+    display: table; /* 1 */
+}
+.navclass:after {
+    clear: both;
+}
+.navclass {
+    *zoom: 1;
+}
+
+h2.headline {
+    padding: 5px 20px; 
+    background: #019245;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2.8rem;
+}
