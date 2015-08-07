@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Your page title here :)</title>
+  <title>Farmers Connect</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -31,8 +31,8 @@
   
 <!-- Header -->
 <header class="row">
-    <button type="submit">Search</button>
-   <img src="images/header-logo.png" class="u-max-full-width">
+    <button type="submit"><img src="images/search-icon.png"></button>
+    <div id="header-image"></div>
     <nav class="navclass">
         <ul>
             <li><a href="#">News</a></li>
@@ -44,7 +44,15 @@
 </header>
     
 <!-- Feature Image -->
-<div class="row"><img src="images/farm.jpg" class="u-max-full-width"</div>
+<div class="site-title">
+    <div class="site-title-text">
+        <h1 class="title">Dairy ready for another big shake up?</h1>
+        <p class="tagline"><a href="#">READ MORE</a></p>
+    </div>    
+    </div>    
+    
+    
+    
 <div id="sign-up">
     <div class="container" align="center">
         <span>
@@ -60,15 +68,18 @@
         <div class="container">
             <div class="row">
                 <div class="one-half column">
-                <p>Sheep sales up on Q2</p>
+                <img src="images/coloured-icons/green-sheep.png" class="icon-left"><h5>Sheep sales up on Q2</h5>
             </div>
             <div class="one-half column">
-                <p>Harvet 2015: Early indications of high yields</p>
+                <img src="images/coloured-icons/green-wheat.png" class="icon-left"><h5>Harvet 2015: Early indications of high yields</h5>
                 </div>
             </div>
         <div class="row">
-            <div class="one-half column"><p>Trees not sheep for better returns</p></div>
-            <div class="one-half column"><p>Australian wine exports to China rise in value</p></div>
+            <div class="one-half column"><img src="images/coloured-icons/green-forestry.png" class="icon-left"><h5>Trees not sheep for better returns</h5>
+        </div>
+        <div class="one-half column">
+                <img src="images/coloured-icons/green-wine.png" width="20%" class="icon-left"><h5>Australian wine exports to China rise in value</h5>
+            </div>
         </div>
         </div>
     
@@ -82,15 +93,15 @@
         </div>
     </div>
 
-    <div id="Biosecurity News">
+    <div id="Biosecurity-News">
         <h2 class="headline">Biosecurity News</h2>
-        <div class="container"><img src="images/elly-video.png" class="u-max-full-width"</div>
+        <div class="container"><img src="images/elly-video.jpg" class="u-max-full-width"</div>
         <div class="row">
             <div class="one-half column">
-                <p></p>
+                <a href="#"><img src="images/icon-only/pests.png" class="bgswap"><h5>Grow trees, not sheep, for better returns</h5></a>
             </div>
             <div class="one-half column">
-                <p></p>
+                <a href="#"><img src="images/icon-only/weeds.png" class="bgswap"><h5>Grow trees, not sheep, for better returns</h5></a>
             </div>
         </div>
     </div>
@@ -99,10 +110,40 @@
 <!-- Content -->
     
 <!-- Footer -->
+<footer>   
+    
 <div class="container">
-<input type="email" placeholder="Enter your e-mail address"/>
-<button type="submit">Sign Up Now</button>
+<h3>Contact Farmers Connect</h3>
+<div class="row">
+ 
+    <div class="one-half column"><img src="images/twitter.png" class="social-icons">
+    <img src="images/facebook.png" class="social-icons">
+    <img src="images/insta.png" class="social-icons">
+    <img src="images/youtube.png" class="social-icons">
+    </div>
+    </div>   
+<h4>... Or send us an email now</h4>    
+    <div class="row">
+    <div class="six columns">
+<label>Your Name</label>
+    <input type="text" placeholder="Christian Surname"/>
+    </div>
+    <div class="six columns">
+      <label for="exampleEmailInput">Your email</label>
+      <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+    </div>
+
    </div>
+    <label for="exampleMessage">Message</label>
+  <textarea class="u-full-width" placeholder="Hi Elly …" id="exampleMessage"></textarea>
+  <label class="example-send-yourself-copy">
+    <input type="checkbox">
+    <span class="label-body">Send a copy to yourself</span>
+  </label>
+  <input class="button-primary" type="submit" value="Submit">
+
+</footer>
+        
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
