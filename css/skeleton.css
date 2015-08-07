@@ -617,7 +617,7 @@ h1.headline {
 }
 
 .site-title {
-    background-image: url(../images/farm.jpg);
+    background-image: url(../images/farm@2x.jpg);
     background-size: cover;
     padding-top: 1px;
     margin-top: -1px;
