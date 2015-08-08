@@ -22,3 +22,5 @@ To access the Home page click on the **Farmers Connect Logo**
 
 To access the **Sign Up** Pages click on Sign Up or Log In on the home page. This process is made up of three pages - using the **Buttons at the bottom of each page** to get to the next. Last links back to the Home Page. 
 
+The search icon on every page is clickable and send you to the **Search Results** screen. 
+
