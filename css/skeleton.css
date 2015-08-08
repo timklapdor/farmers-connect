@@ -174,8 +174,8 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
   display: inline-block;
-  height: 38px;
-  padding: 0 30px;
+  height: 40px;
+  padding: 0 10px;
   color: #555;
   text-align: center;
   font-size: 11px;
@@ -281,7 +281,7 @@ fieldset {
   border-width: 0; }
 input[type="checkbox"],
 input[type="radio"] {
-  display: inline; }
+  display: inline-; }
 label > .label-body {
   display: inline-block;
   margin-left: .5rem;
@@ -442,7 +442,7 @@ header {
     min-height: 30vh;
 }
 }
-header button {
+header .button {
     position: absolute;
     right: 3px;
     top: 2px;
@@ -564,7 +564,6 @@ h2.headline {
 }
 
 h1.headline {
-    margin-top: 10px;
     padding: 5px 20px; 
     background: #666666;
     color: #fff;
@@ -660,14 +659,23 @@ footer {
     padding-top: 50px;
 }
 
-footer p {
-    text-align: center;
+.social-icons {
+    width: 20%;
+    padding: 10px;
 }
+
+.social {
+    text-align: center;
+    
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 1000px) {
 .social-icons {
     width: 10%;
     padding: 10px;
 }
-
+}
 .center-it {
     text-align: center;
     align-content: center;
@@ -675,8 +683,11 @@ footer p {
 
 .title {
     color: #8CC63F;
-    font-size: .6em;
     text-transform: uppercase;
+}
+
+.title H4 {
+    font-size: .6em;
 }
 
 .profile h4{
@@ -686,4 +697,185 @@ footer p {
 blockquote {
  border-left: 5px solid #8CC63F;
     padding: 10px;
+}
+
+.middle {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;  
+}
+
+.selector {
+    background-color: #fff;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+}
+
+.selector:hover {
+    background-color: #8CC63F;
+}
+
+.preview {
+    background-color: #aaa;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.stayleft{
+    text-align: left;
+    padding: 10px;
+}
+
+.stayright{
+    text-align: right;
+    float: right;
+}
+
+.listicle {
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.morebutton {
+  display: inline-block;
+  height: 40px;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  color: #fff;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: #666;
+  border-radius: 4px;
+  cursor: pointer;
+  box-sizing: border-box; }
+.morebutton:hover {
+  border: 1px solid #8CC63F;
+  border-color: #8CC63F;
+  color: #8CC63F;
+  background-color: transparent;
+}
+
+
+.thread {
+    background-color: #fff;
+    vertical-align: middle;
+    padding: 5px ;
+    margin-bottom: 40px;
+}
+
+.thread img {
+    width: 20%;
+    float: left;
+    padding-right: 10px;
+    margin-bottom: 70px;
+}
+
+.thread h5 {
+    color: #8CC63F;
+}
+
+.reply {
+    background-color: #ddd;
+    vertical-align: middle;
+    padding: 5px;
+    margin-top: -60px;
+    margin-left: 10%;
+}
+.reply img {
+    width: 30%;
+    float: left;
+    padding-right: 10px;
+}    
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 500px) {
+.thread img {
+    margin-bottom: 40px;
+}
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 730px) {
+
+.thread {
+    background-color: #fff;
+    vertical-align: middle;
+    padding: 10px ;
+    margin-bottom: 40px;
+}
+    
+.thread img {
+    margin-bottom: 0px;
+}
+    
+
+.reply {
+    background-color: #ddd;
+    vertical-align: middle;
+    padding: 10px;
+    margin-top: -60px;
+    margin-left: 25%;
+}
+}
+
+.morethread {
+  display: inline-block;
+  height: 40px;
+  padding: 0 30px;
+  margin-top: -20px;    
+  margin-bottom: 10px;
+  color: #fff;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: #019245;
+  border-radius: 4px;
+  cursor: pointer;
+  box-sizing: border-box; }
+.morethread:hover {
+  border-color: #8CC63F;
+  color: #fff;
+  background-color: #8CC63F;
+}
+
+.profilelist {
+    background-color: #ddd;
+    vertical-align: middle;
+    padding: 5px ;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.profilelist h4 {
+    font-size: 1.5em;
+    text-align: left;
+}
+
+.profile-pic {
+    width: 30%;
+    float: left;
+    padding-right: 10px;
+    margin-bottom: 40px;
+}
+
+.profile-icon {
+    width: 30%;
+    padding: 0px 1px;
+    vertical-align: top;
+    text-align: center;
+}
+
+.profilelist button {
+    margin-top: 0px; 
 }

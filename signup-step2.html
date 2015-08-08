@@ -21,11 +21,16 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/tiles.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 
+
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script> 
+<script type="text/javascript" src="js/rich-tile.js"></script>  
+    
 </head>
 <body>
   
@@ -43,118 +48,39 @@
     </nav>
 </header>
     
-<!-- Search Bar -->
-<h1 class="headline">Discussion Forums</h1>
-
-<h2 class="headline">Animal Care</h2>
-    <div class="container">
-        <h5>Tips for caring for your animals.</h5>
-<table class="u-full-width">
-<thead>
-<tr>
-<th align="left">Topics </th>
-<th align="left"> Posts </th>
-<th align="left"> Freshness</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">Caring for Chickens </td>
-<td align="left"> 42 </td>
-<td align="left"> 2 Days</td>
-</tr>
-<tr>
-<td align="left">Caring for Pigs </td>
-<td align="left"> 34 </td>
-<td align="left"> 10 Minutes</td>
-</tr>
-<tr>
-<td align="left">Caring for Alpacas </td>
-<td align="left"> 68 </td>
-<td align="left"> 1 Week</td>
-</tr>
-<tr>
-<td align="left">Caring for Cattle </td>
-<td align="left"> 16 </td>
-<td align="left"> 4 Days</td>
-</tr>
-<tr>
-<td align="left">Craing for Horses </td>
-<td align="left"> 47 </td>
-<td align="left"> 7 Hours</td>
-</tr>
-<tr>
-<td align="left">Caring for Sheep </td>
-<td align="left"> 52 </td>
-<td align="left"> 16 Hours</td>
-</tr>
-    </tbody>
-        </table>
+<h1 class="headline">Complete your profile</h1>   
+<div class="container">    
+    <h5>We all want to see who we’re chatting with - choose a profile pic!</h5>    
+    <div class="row">
+    <div class="five columns center-it selector"><img src="images/upload.png" width="50%">
+        <p>Upload from your device</p></div>
+    <div class="two columns middle center-it"><h2>OR</h2></div>
+    <div class="five columns center-it selector"><img src="images/camera.png" width="50%">
+        <p>Use your camera now</p></div>
     </div>
-    
-<h2 class="headline">Animal Sales</h2>
-    <div class="container">
-        <h5>Information on selling animals and upcoming events.</h5>    
-        <table class="u-full-width">
-            <thead>
-<tr>
-<th align="left">Topics </th>
-<th align="left"> Posts </th>
-<th align="left"> Freshness</th>
-</tr>
-</thead>
-            <tbody>
-            <tr>    
-<td align="left">Upcoming Events </td>
-<td align="left"> 14 </td>
-<td align="left"> 2 Weeks</td>
-</tr>
-<tr>
-<td align="left">Reviews &amp; Recommendations </td>
-<td align="left"> 25 </td>
-<td align="left"> 1 Month</td>
-</tr>
-
-</tbody>
-</table>
-    </div>   
-
-<h2 class="headline">Disease & Sickness </h2>
-    <div class="container">
-        <h5>This forum is for discussion of diseases and sick animals.</h5>
-
-<table class="u-full-width">        
-<thead>
-<tr>
-<th align="left">Topics </th>
-<th align="left"> Posts </th>
-<th align="left"> Freshness</th>
-</tr>
-</thead><tr>
-    <tbody>
-<td align="left">ALERTS! Outbreaks and Warnings </td>
-<td align="left"> 86 </td>
-<td align="left"> 3 Weeks</td>
-</tr></tbody>
-</table>    
+<p>&nbsp;</p>    
+    <div class="row">
+    <div class="four columns">&nbsp;</div>
+        <div class="four columns preview center-it"><img src="images/preview-icon.png" class="u-full-width">
+        <h5>PREVIEW</h5></div>
+    <div class="four columns">&nbsp;</div>
+</div>
+    <p>&nbsp;</p>   
+    <a href="signup-step3.html"><button class="button-primary u-full-width">NEXT >></button></a>
     </div>
-   
-    <h1> </h1>
- 
-    
+
 <!-- Footer -->
 <footer>   
     
 <div class="container">
 <h3>Contact Farmers Connect</h3>
-<div class="row">
- 
-    <div class="one-half column"><img src="images/twitter.png" class="social-icons">
+<div class="row center-it">
+    <img src="images/twitter.png" class="social-icons">
     <img src="images/facebook.png" class="social-icons">
     <img src="images/insta.png" class="social-icons">
     <img src="images/youtube.png" class="social-icons">
-    </div>
-    </div>   
+</div>
+  
 <h4>... Or send us an email now</h4>    
     <div class="row">
     <div class="six columns">
@@ -173,11 +99,12 @@
     <input type="checkbox">
     <span class="label-body">Send a copy to yourself</span>
   </label>
-  <input class="button-primary u-full-width" type="submit" value="Submit">
+ <button class="button-primary" type="submit" value="Submit">
 
 </footer>
         
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    
 </body>
 </html>

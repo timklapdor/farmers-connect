@@ -1,0 +1,168 @@
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+
+/**
+ * Component: Tiles
+ */
+.Tiles {
+  font-size: 0;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.Tile {
+  display: inline-block;
+  font-size: 1rem;
+  vertical-align: top;
+  width: 100%;
+}
+
+.Tile-content {
+  background: #aaa;
+  border-radius: 0.375rem;
+  color: #fff;
+  font-size: 1.5rem;
+  margin: .2rem 0.2rem 0;
+  text-align: center;
+}
+
+
+.Tile-select {
+  background: #8CC63F;
+  border-radius: 0.375rem;
+  color: #005b7f;
+  font-size: 1.5rem;
+  margin: .2rem 0.2rem 0;
+  padding: 1rem rem;
+  text-align: center;
+}
+
+.Tile-flyout .Tile-content {
+  background-color: #666;
+  color: #666;
+}
+
+.Tile-flyout {
+  display: none;
+  position: relative;
+}
+
+.Tile.is-expanded .Tile-flyout {
+  display: block;
+}
+
+.Tile-flyout:before {
+  background: #666;
+  content: "";
+  left: 50%;
+  margin-left: -0.5rem;
+  position: absolute;
+  height: 1rem;
+  top: -0.5rem;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  width: 1rem;
+  z-index: 2;
+}
+
+/**
+ * Breakpoint layout changes
+ */
+/* @media (min-width: 30em) {
+  .Tile {
+    width: 50%;
+  }
+
+  .Tile-flyout {
+    width: 200%;
+  }
+
+  .Tile:nth-child(2n+1) .Tile-flyout {
+    margin-left: 0%;
+  }
+  .Tile:nth-child(2n+1) .Tile-flyout:before {
+    left: 25%;
+  }
+
+  .Tile:nth-child(2n+2) .Tile-flyout {
+    margin-left: -100%;
+  }
+  .Tile:nth-child(2n+2) .Tile-flyout:before {
+    left: 75%;
+  }
+}*/
+@media (min-width: 30em) {
+  .Tile {
+    width: 33.33333%;
+  }
+
+  .Tile-flyout {
+    width: 300%;
+  }
+
+  .Tile:nth-child(3n+1) .Tile-flyout {
+    margin-left: 0%;
+  }
+  .Tile:nth-child(3n+1) .Tile-flyout:before {
+    left: 16.66667%;
+  }
+
+  .Tile:nth-child(3n+2) .Tile-flyout {
+    margin-left: -100%;
+  }
+  .Tile:nth-child(3n+2) .Tile-flyout:before {
+    left: 50%;
+  }
+
+  .Tile:nth-child(3n+3) .Tile-flyout {
+    margin-left: -200%;
+  }
+  .Tile:nth-child(3n+3) .Tile-flyout:before {
+    left: 83.33333%;
+  }
+}
+@media (min-width: 64em) {
+  .Tile {
+    width: 25%;
+  }
+
+  .Tile-flyout {
+    width: 400%;
+  }
+
+  .Tile:nth-child(4n+1) .Tile-flyout {
+    margin-left: 0%;
+  }
+  .Tile:nth-child(4n+1) .Tile-flyout:before {
+    left: 12.5%;
+  }
+
+  .Tile:nth-child(4n+2) .Tile-flyout {
+    margin-left: -100%;
+  }
+  .Tile:nth-child(4n+2) .Tile-flyout:before {
+    left: 37.5%;
+  }
+
+  .Tile:nth-child(4n+3) .Tile-flyout {
+    margin-left: -200%;
+  }
+  .Tile:nth-child(4n+3) .Tile-flyout:before {
+    left: 62.5%;
+  }
+
+  .Tile:nth-child(4n+4) .Tile-flyout {
+    margin-left: -300%;
+  }
+  .Tile:nth-child(4n+4) .Tile-flyout:before {
+    left: 87.5%;
+  }
+}
+VIEW SCSS CODE

@@ -21,17 +21,22 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/tiles.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 
+
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script> 
+<script type="text/javascript" src="js/rich-tile.js"></script>  
+    
 </head>
 <body>
   
 <!-- Header -->
 <header class="row">
-    <a href="search.html" class="button"><img src="images/search-icon.png"></a>
+<a href="search.html" class="button"><img src="images/search-icon.png"></a>
     <a href="index.html"><div id="header-image"></div></a>
     <nav class="navclass">
         <ul>
@@ -42,72 +47,82 @@
         </ul> 
     </nav>
 </header>
-    
-<!-- Search Bar -->
-<h1 class="headline">Farmer Finder</h1>
-<div class="container">
-    <p>Use this tool to find other farmers. Search based on <a href="#">name</a>, <a href="#">property</a>, <a href="#">location</a>, <a href="#">stock</a>, <a href="#">crops</a> or <a href="#">other areas of interest</a>. </p>
-   
-    
-<form id="search">
-  <div class="row">
-    <div class="nine columns">
-      <input class="u-full-width" type="email" placeholder="type your seach here" id="exampleEmailInput">
-    </div>
-    <div class="three columns">
-        <button class="button-primary u-full-width">Search</button>
 
-    </div>
-  </div>
-    <div class="row">
-Restrict search to just:
-    <label class="name-res listicle">
-    <input type="checkbox">
-    <span class="label-body">NAME</span>
-    </label>
-    <label class="property-res listicle">
-    <input type="checkbox">
-    <span class="label-body">PROPERTY</span>
-    </label>
+<h1 class="headline">Last stop </h1>   
+<div class="container">    
+    <h5>Farmers Connect works by providing ways to discover and connect people. One of the best ways is to find others with the same stock, crops and interests.</h5>    
 
-      <label class="location-res listicle">
-    <input type="checkbox">
-    <span class="label-body">LOCATION</span>
-  </label>
-    </div>
     
- </div>    
-        <h2 class="headline">Location</h2>
-        <div class="container">
-            <h5>Use the map and click on the markers</h5>
-<img src="images/map-australia.jpg" class="u-max-full-width" border="1px solid #fff">
-            <h5>Or search via post code</h5>
-<div class="row">
-    <div class="nine columns">
-      <input class="u-full-width" type="email" placeholder="enter postcode" id="exampleEmailInput">
+<div class="Tiles">
+  <div class="Tile js-tile is-expanded">
+    <div class="Tile-select">
+        <img src="images/icon-only/horse.png" width="40%">
     </div>
-    <div class="three columns">
-        <button class="button-primary u-full-width">Search</button>
-
-    </div>
-  </div>
+    <div class="Tile-flyout">
+      <div class="Tile-content">
+  <div class="row stayleft">
+        <div class="eight columns">
+        <label for="exampleFirstNameInput" class="title">Breeds</label>
+        <input class="u-full-width" type="text" placeholder="Use comma to seperate each breed"id="exampleNameInput">
         </div>
-                <h1> </h1>
-
-   <h2 class="headline">Stock</h2>
-        <div class="container">
-            <h5>Use this tool to find other farmers based on livestock</h5>
-    <img src="images/icon-only/horse.png" class="icon-list">
-    <img src="images/icon-only/cattle.png" class="icon-list">
-    <img src="images/icon-only/sheep.png" class="icon-list">
-    <img src="images/icon-only/pig.png" class="icon-list">
-    <img src="images/icon-only/chickens.png" class="icon-list">
-    <img src="images/icon-only/alpacas.png" class="icon-list">
+        <div class="four columns">
+        <label for="exampleSurNameInput" class="title">Total Number</label>
+        <input class="u-full-width" type="text" placeholder="animals on your property"id="exampleNameInput">
+        </div>
+    </div>   
+      
+  <div class="row stayleft">
+        <div class="eight columns">
+        <label for="exampleFirstNameInput" class="title">Specialties and Service</label>
+        <input class="u-full-width" type="text" placeholder="list your specialties or services you offer"id="exampleNameInput">
+        </div>
+        <div class="four columns">
+        <label for="exampleSurNameInput" class="title">&nbsp;</label>
+        <button class="button-primary u-full-width">Add a Partner</button>
+        </div>
+    </div>           
+          
+          
+      </div>
     </div>
-            <h1> </h1>
-   <h2 class="headline">Crops</h2>
+  </div>
+  <div class="Tile js-tile">
+    <div class="Tile-content">
+    <img src="images/icon-only/cattle.png" width="40%">
+    </div>
+
+  </div>
+  <div class="Tile js-tile">
+    <div class="Tile-content">
+          <img src="images/icon-only/sheep.png" width="40%">
+    </div>
+
+  </div>
+  <div class="Tile js-tile">
+    <div class="Tile-content">
+    <img src="images/icon-only/pig.png" width="40%">
+    </div>
+
+  </div>
+  <div class="Tile js-tile">
+    <div class="Tile-content">
+    <img src="images/icon-only/chickens.png" width="40%">
+    </div>
+ 
+  </div>
+
+      <div class="Tile js-tile">
+    <div class="Tile-content">
+    <img src="images/icon-only/other.png" width="40%">
+    </div>
+    </div>
+    </div>
+    </div>    
+    <p>&nbsp;</p> 
+    
+    <h2 class="headline">Crops</h2>
         <div class="container">
-            <h5>Use this tool to find other farmers based on crops</h5>
+            <h5>Select the crops you are currently or interested in farming.</h5>
     <img src="images/icon-only/wheat.png" class="icon-list">
     <img src="images/icon-only/sorghum.png" class="icon-list">
     <img src="images/icon-only/barley.png" class="icon-list">
@@ -121,34 +136,36 @@ Restrict search to just:
        <img src="images/icon-only/chickpeas.png" class="icon-list">       
         <img src="images/icon-only/olive.png" class="icon-list">
              </div>
-    <h1></h1>
+
+<p>&nbsp;</p> 
     
  <h2 class="headline">Other</h2>
         <div class="container">
-            <h5>Use this tool to find other farmers based on other services, products and business opportunities</h5>
+            <div class="row">
+            <h5>Select the other services, products and business opportunities you are currently operating or are interested in. </h5>
     <img src="images/icon-only/stays.png" class="icon-list">
     <img src="images/icon-only/organic.png" class="icon-list">
     <img src="images/icon-only/wine.png" class="icon-list">
     <img src="images/icon-only/oil.png" class="icon-list">
     <img src="images/icon-only/cheese.png" class="icon-list">
     <img src="images/icon-only/beer.png" class="icon-list">
-    </div> 
-    <h1> </h1>
- 
-    
+    </div>
+     <p>&nbsp;</p>        
+<div class="row"> 
+            <a href="index.html"><button class="button-primary u-full-width">THAT’S IT - DONE!</button></a>
+    </div>  </div>  
 <!-- Footer -->
 <footer>   
     
 <div class="container">
 <h3>Contact Farmers Connect</h3>
-<div class="row">
- 
-    <div class="one-half column"><img src="images/twitter.png" class="social-icons">
+<div class="row center-it">
+    <img src="images/twitter.png" class="social-icons">
     <img src="images/facebook.png" class="social-icons">
     <img src="images/insta.png" class="social-icons">
     <img src="images/youtube.png" class="social-icons">
-    </div>
-    </div>   
+</div>
+  
 <h4>... Or send us an email now</h4>    
     <div class="row">
     <div class="six columns">
@@ -167,11 +184,12 @@ Restrict search to just:
     <input type="checkbox">
     <span class="label-body">Send a copy to yourself</span>
   </label>
-  <input class="button-primary" type="submit" value="Submit">
+  <button class="button-primary" type="submit" value="Submit">
 
 </footer>
         
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    
 </body>
 </html>
